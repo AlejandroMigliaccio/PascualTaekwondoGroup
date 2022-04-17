@@ -17,7 +17,7 @@ body {
 }
 
 /*Header*/
-header {
+.header {
     background-color: #141E27;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -39,32 +39,52 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.header__social-media img {
+/*Nav*/
+nav {
+    background-color: #E0DDAA;
     width: 100%;
+}
 
+.nav__sections {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    justify-items: center;
+    margin: auto 9%;
+    grid-gap: 3%;
+}
+
+.nav__section__a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: black;
 }
 
 
 /*Tablet*/
 @media only screen and (min-width: 600px) {
     header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        justify-items: center;
+        column-gap: 24%;
     }
-    .header__logo{
+
+    .header__logo {
         margin: auto 3rem;
     }
-    .header__title{
+
+    .header__title {
         font-size: 2rem;
         margin: auto 0;
-        
+
     }
-    .header__social-media{
-        margin: auto 3rem;        
+
+    .header__social-media {
+        margin: auto 3rem;
     }
 }
 
 /*Desktop*/
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+
+}
