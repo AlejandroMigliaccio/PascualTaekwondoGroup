@@ -53,7 +53,7 @@ nav {
     grid-gap: 3%;
 }
 
-.nav__section__a{
+.nav__section__a {
     text-decoration: none;
     font-weight: 600;
     font-size: larger;
@@ -63,10 +63,12 @@ nav {
 
 /*Tablet*/
 @media only screen and (min-width: 600px) {
+
     header {
         display: grid;
         justify-items: center;
         column-gap: 24%;
+        width: 100%;
     }
 
     .header__logo {
@@ -82,9 +84,20 @@ nav {
     .header__social-media {
         margin: auto 3rem;
     }
+
+    .nav__section__a {
+        font-weight: 800;
+        }
 }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
-
+    .nav__sections{
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        font-size: larger;
+    }
 }
