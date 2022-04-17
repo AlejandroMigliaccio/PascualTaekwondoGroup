@@ -43,15 +43,31 @@ header {
     width: 100%;
 
 }
+.nav__sections {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    justify-items: center;
+    margin: auto 9%;
+    grid-gap: 3%;
+}
+
+.nav__section__a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: black;
+
+}
 
 
 /*Tablet*/
 @media only screen and (min-width: 600px) {
+
     header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        justify-items: center;
+        column-gap: 24%;
+        width: 100%;
     }
     .header__logo{
         margin: auto 3rem;
@@ -64,7 +80,20 @@ header {
     .header__social-media{
         margin: auto 3rem;        
     }
+
+    .nav__section__a {
+        font-weight: 800;
+        }
 }
 
 /*Desktop*/
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    .nav__sections{
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        font-size: larger;
+    }
+}
