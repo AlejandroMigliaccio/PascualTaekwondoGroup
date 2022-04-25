@@ -1,0 +1,25 @@
+{
+  "name": "pascualtaekwondogroup",
+  "version": "1.0.0",
+  "description": "Clases SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/index.scss styles/index.css ",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroMigliaccio/PascualTaekwondoGroup.git"
+  },
+  "author": "alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroMigliaccio/PascualTaekwondoGroup/issues"
+  },
+  "homepage": "https://github.com/AlejandroMigliaccio/PascualTaekwondoGroup#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

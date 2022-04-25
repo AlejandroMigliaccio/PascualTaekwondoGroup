@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Mobile*/
+html {
+    font-size: 62.5%;
+    /*1rem -> 10px*/
+}
+
+body {
+    width: 100%;
+    background-color: #EEEDDE;
+}
+
+/*Header*/
+.header {
+    background-color: #141E27;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &__logo img {
+        width: 6rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        color: #EEEDDE;
+    }
+
+    &__social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__social-media img {
+        width: 100%;
+
+    }
+}
+
+.nav {
+    border-bottom: 1px solid #141E27;
+
+    &__sections {
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        justify-items: center;
+        margin: auto 9%;
+        grid-gap: 3%;
+    }
+
+    &__section {
+
+        &__a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: larger;
+            color: black;
+            padding: 8px 16px;
+        }
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__video {
+        width: 853px;
+        height: 480px;
+        margin: 0 auto;
+    }
+
+    &__tae {
+        width: 80%;
+        height: 350px;
+        border: 2px solid #141E27;
+        text-align: cent;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+
+    .header {
+        display: grid;
+        justify-items: center;
+        column-gap: 24%;
+        width: 100%;
+
+        &__logo {
+            margin: auto 3rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+            margin: auto 0;
+
+        }
+
+        &__social-media {
+            margin: auto 3rem;
+        }
+    }
+
+    .nav {
+        &__section {
+            &__a {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    .nav {
+        &__sections {
+            display: flex;
+            width: 60%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            font-size: larger;
+            text-decoration: none;
+        }
+    }
+}
