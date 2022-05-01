@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 
 /*Mobile*/
@@ -42,16 +43,20 @@ body {
         width: 100%;
     }
 }
-nav{
+
+nav {
     background-color: #E0DDAA;
 }
+
 .nav {
     background-color: #E0DDAA;
     width: 100%;
+
     &__sections {
         grid-template-columns: repeat(4, 1fr);
         display: grid;
         justify-items: center;
+        align-items: center;
         margin: auto 9%;
         grid-gap: 3%;
     }
@@ -71,28 +76,88 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     &__video {
         width: 80%;
-        margin: 3rem auto;
+        margin: 2rem auto;
+        border-radius: 20px 8px;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9);
     }
 
     &__tae {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 50%;
-        height: 87px;
+        width: 65%;
         border-radius: 16px;
         border: 2px solid #141E27;
-        p{
+        background-color: #203239;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
 
+        img {
+            display: none;
         }
-        img{
-            height: 30%;
-            object-fit: contain;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        &__text {
+            display: flex;
+            color: #EEEDDE;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
     }
+
+    &__kwon {
+        width: 65%;
+        border-radius: 16px;
+        border: 2px solid #141E27;
+        background-color: #203239;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
+
+        img {
+            display: none;
+        }
+
+        h2 {
+            margin-bottom: 3px;
+        }
+
+        &__text {
+            display: flex;
+            color: #EEEDDE;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__do {
+        width: 65%;
+        border-radius: 16px;
+        border: 2px solid #141E27;
+        background-color: #203239;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
+
+        img {
+            display: none;
+        }
+
+        h2 {
+            margin-bottom: 3px;
+        }
+
+        &__text {
+            display: flex;
+            color: #EEEDDE;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
 }
 
 /*Tablet*/
@@ -126,15 +191,85 @@ nav{
             }
         }
     }
-    .section{
-        &__video{
+
+    .section {
+        &__video {
             height: 300px;
+        }
+
+        &__tae {
+            flex-direction: row-reverse;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            &__text {
+                width: 70%;
+                P{
+                    width: 80%;
+                }
+            }
+
+            img {
+                display: inline;
+                border-radius: 16px 0px 0px 16px;
+                width: 30%;
+            }
+        }
+
+        &__kwon {
+            flex-direction: row-reverse;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            &__text {
+                width: 70%;
+                P{
+                    width: 80%;
+                }
+            }
+
+            img {
+                display: inline;
+                border-radius: 16px 0px 0px 16px;
+                width: 30%;
+                height: auto;
+            }
+        }
+        &__do {
+            flex-direction: row-reverse;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            &__text {
+                width: 70%;
+                P{
+                    width: 80%;
+                }
+            }
+
+            img {
+                display: inline;
+                border-radius: 16px 0px 0px 16px;
+                width: 30%;
+                height: auto;
+            }
         }
     }
 }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
+    .header {
+        height: 9rem;
+
+        img {
+            width: 80px;
+        }
+    }
+
     .nav {
         &__sections {
             display: flex;
@@ -143,13 +278,13 @@ nav{
             flex-direction: row;
             justify-content: space-evenly;
             margin: 0 auto;
-            font-size: 30px;
+            font-size: 20px;
             text-decoration: none;
         }
     }
 
-    .section{
-        &__video{
+    .section {
+        &__video {
             width: 50%;
             height: 700px;
         }
