@@ -12,7 +12,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #EEEDDE; }
+  background-color: #EEEDDE !important; }
 
 footer {
   width: 100%;
@@ -44,7 +44,6 @@ nav {
   background-color: #E0DDAA; }
 
 .nav {
-  background-color: #E0DDAA;
   width: 100%; }
   .nav__sections {
     grid-template-columns: repeat(4, 1fr);
@@ -53,16 +52,53 @@ nav {
     align-items: center;
     margin: auto 9%;
     grid-gap: 3%; }
-  .nav__section__a {
+  .nav__section__a1 {
     text-decoration: none;
     font-weight: 600;
     font-size: larger;
     color: black; }
+    .nav__section__a1:hover {
+      transition: 500ms;
+      text-shadow: 3px 3px 6px #F9D923;
+      transform: translateY(-2px);
+      color: black; }
+  .nav__section__a2 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: black; }
+    .nav__section__a2:hover {
+      transition: 500ms;
+      text-shadow: 3px 3px 6px #36AE7C;
+      transform: translateY(-2px);
+      color: black; }
+  .nav__section__a3 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: black; }
+    .nav__section__a3:hover {
+      transition: 500ms;
+      text-shadow: 3px 3px 6px #187498;
+      transform: translateY(-2px);
+      color: black; }
+  .nav__section__a4 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: black; }
+    .nav__section__a4:hover {
+      transition: 500ms;
+      text-shadow: 3px 3px 6px #EB5353;
+      transform: translateY(-2px);
+      color: black; }
 
 .section {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section a {
+    text-decoration: none; }
   .section__video {
     width: 80%;
     margin: 2rem auto;
@@ -108,7 +144,8 @@ nav {
     border: 2px solid #141E27;
     background-color: #203239;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 1rem; }
+    margin-bottom: 3rem;
+    text-decoration: none; }
     .section__do img {
       display: none; }
     .section__do h2 {
@@ -119,6 +156,10 @@ nav {
       flex-direction: column;
       align-items: center;
       text-align: center; }
+
+.form {
+  width: 80%;
+  margin: 3rem auto; }
 
 .footer {
   display: flex;
@@ -137,6 +178,8 @@ nav {
       display: flex;
       flex-direction: row;
       margin: 0 auto; }
+      .footer__redes-sociales .encabezado__social-media img {
+        width: 90%; }
 
 /*Tablet*/
 @media only screen and (min-width: 600px) {
@@ -199,7 +242,9 @@ nav {
       display: inline;
       border-radius: 16px 0px 0px 16px;
       width: 30%;
-      height: auto; } }
+      height: auto; }
+  .form {
+    width: 60%; } }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
@@ -236,6 +281,8 @@ nav {
     .section__do {
       font-size: 25px;
       margin-bottom: 3rem; }
+  .form {
+    width: 40%; }
   .footer {
     font-size: 15px;
     margin-top: 0;
