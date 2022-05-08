@@ -96,9 +96,14 @@ nav {
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  transition: 500ms; }
   .section a {
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 500ms; }
+    .section a:hover {
+      transform: translateX(10px);
+      box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9); }
   .section__video {
     width: 80%;
     margin: 2rem auto;
@@ -109,7 +114,6 @@ nav {
     border-radius: 16px;
     border: 2px solid #141E27;
     background-color: #203239;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem; }
     .section__tae img {
       display: none; }
@@ -126,7 +130,6 @@ nav {
     border-radius: 16px;
     border: 2px solid #141E27;
     background-color: #203239;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem; }
     .section__kwon img {
       display: none; }
@@ -143,7 +146,6 @@ nav {
     border-radius: 16px;
     border: 2px solid #141E27;
     background-color: #203239;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 3rem;
     text-decoration: none; }
     .section__do img {
@@ -163,11 +165,16 @@ nav {
 
 .footer {
   display: flex;
+  flex-direction: column;
   margin-top: 3rem;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-around;
   padding-top: 3%;
   text-align: center; }
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
   .footer__sitios {
     text-align: center; }
     .footer__sitios li {
@@ -180,6 +187,9 @@ nav {
       margin: 0 auto; }
       .footer__redes-sociales .encabezado__social-media img {
         width: 90%; }
+  .footer__derechos {
+    background-color: #EEEDDE;
+    width: 100%; }
 
 /*Tablet*/
 @media only screen and (min-width: 600px) {
