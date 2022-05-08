@@ -14,7 +14,7 @@ html {
 
 body {
     width: 100%;
-    background-color: #EEEDDE;
+    background-color: #EEEDDE !important;
 }
 
 footer {
@@ -60,7 +60,6 @@ nav {
 }
 
 .nav {
-    background-color: #E0DDAA;
     width: 100%;
 
     &__sections {
@@ -71,14 +70,58 @@ nav {
         margin: auto 9%;
         grid-gap: 3%;
     }
-
+    
     &__section {
-
-        &__a {
+        
+        &__a1 {
             text-decoration: none;
             font-weight: 600;
             font-size: larger;
             color: black;
+            &:hover{
+                transition: 500ms;
+                text-shadow: 3px 3px 6px #F9D923;
+                transform: translateY(-2px);
+                color: black;
+            }
+        }
+
+        &__a2 {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: larger;
+            color: black;
+            &:hover{
+                transition: 500ms;
+                text-shadow: 3px 3px 6px #36AE7C;
+                transform: translateY(-2px);
+                color: black;
+            }
+        }
+
+        &__a3 {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: larger;
+            color: black;
+            &:hover{
+                transition: 500ms;
+                text-shadow: 3px 3px 6px #187498;
+                transform: translateY(-2px);
+                color: black;
+            }
+        }
+        &__a4 {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: larger;
+            color: black;
+            &:hover{
+                transition: 500ms;
+                text-shadow: 3px 3px 6px #EB5353;
+                transform: translateY(-2px);
+                color: black;
+            }
         }
     }
 }
@@ -87,7 +130,15 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    transition: 500ms;
+    a{
+        text-decoration: none;
+        transition: 500ms;
+        &:hover{
+            transform: translateX(10px);
+            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9);
+        }
+    }
     &__video {
         width: 80%;
         margin: 2rem auto;
@@ -100,9 +151,7 @@ nav {
         border-radius: 16px;
         border: 2px solid #141E27;
         background-color: #203239;
-        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 1rem;
-
         img {
             display: none;
         }
@@ -125,9 +174,7 @@ nav {
         border-radius: 16px;
         border: 2px solid #141E27;
         background-color: #203239;
-        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 1rem;
-
         img {
             display: none;
         }
@@ -150,9 +197,9 @@ nav {
         border-radius: 16px;
         border: 2px solid #141E27;
         background-color: #203239;
-        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
-        margin-bottom: 1rem;
-
+        margin-bottom: 3rem;
+        text-decoration: none;
+        
         img {
             display: none;
         }
@@ -171,15 +218,26 @@ nav {
     }
 }
 
+.form{
+    width: 80%;
+    margin: 3rem auto;
+}
 .footer {
     display: flex;
+    flex-direction: column;
     margin-top: 3rem;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-around;
     padding-top: 3%;
     text-align: center;
+    &__content{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
     &__sitios {
         text-align: center;
+
         li {
             margin: 5%;
         }
@@ -187,11 +245,20 @@ nav {
 
     &__redes-sociales {
         text-align: center;
+
         .encabezado__social-media {
             display: flex;
             flex-direction: row;
             margin: 0 auto;
+            img{
+                width: 90%;
+            }
         }
+    }
+
+    &__derechos{
+        background-color: #EEEDDE;
+        width: 100%;
     }
 }
 
@@ -304,6 +371,9 @@ nav {
             }
         }
     }
+    .form{
+        width: 60%;
+    }
 }
 
 /*Desktop*/
@@ -339,6 +409,7 @@ nav {
         }
     }
 
+
     .section {
         margin-bottom: 3rem;
 
@@ -363,7 +434,10 @@ nav {
         }
     }
 
-    .footer{
+    .form{
+        width: 40%;
+    }
+    .footer {
         font-size: 15px;
         margin-top: 0;
         padding: 1%;
