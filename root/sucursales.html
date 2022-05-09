@@ -11,13 +11,142 @@
         <meta name="author" content="Alejandro Damian Migliaccio" />
         <meta name="copyright" content="PTG (c)" />
         <title>Pascual Taekwondo Group</title>
+        <link rel="icon" href="../images/ictf.svg">
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../images/ICTF.svg" alt="Logo-ictf" class="">
+        </div>
+        <div class="header__title">
+            <h1>Pascual Taekwondo Group</h1>
+        </div>
+        <div class="header__social-media">
+            <a href="https://es-la.facebook.com/pascualtkdgroup/" target="_blank">
+                <img src="../images/facebook.svg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/ptg.training/" target="_blank">
+                <img src="../images/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://twitter.com/pascualtkdgroup" target="_blank">
+                <img src="../images/twitter.svg" alt="twitter">
+            </a>
+        </div>
+    </header>
+    <nav calss="nav">
+        <div class="nav__sections">
+            <a href="./index.html" class="nav__section__a1">Inicio</a></li>
+            <a href="#" class="nav__section__a2">Taekwondo</a></li>
+            <a href="#" class="nav__section__a3">Alumnos</a></li>
+            <a href="#" class="nav__section__a4">ICTF</a></li>
+        </div>
+    </nav>
     
+    <section>
+        <div class="sucursal">
+            <div class="sucursal__content">
+            <h2>Luis Guillon</h2>
+            <p>Siendo nuestra sede central, cuenta con mas actividades tales como boxeo, funcional y kickboxing, se encuentra en el municipio de Esteban Echeverría a 2 cuadras de la avenida principal Bulevar Buenos Aires</p>
+            </div>
+            <div class="sucursal__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13103.286065911638!2d-58.4448265!3d-34.810432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b7d9ad6c28eda5!2sPascual%20Taekwondo%20Group!5e0!3m2!1ses-419!2sar!4v1652030228098!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sucursal">
+            <div class="sucursal__content">
+                <h2>Lavallol</h2>
+                <p>Segunda sucursal de la escuela, se encuentra a cuadras de la estación de Lavallol en el municipio de Lomas de Zamora  dentro del gimnasio Oxigeno</p>
+            </div>
+            <div class="sucursal__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13107.003920322468!2d-58.42216080629608!3d-34.78704376382554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3b1e5a8d89d%3A0x4f2a5000d4e02074!2sOXIGENO%20GYM!5e0!3m2!1ses-419!2sar!4v1652030284091!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sucursal">
+            <div class="sucursal__content">                
+                <h2>Florencio Varela</h2>
+                <p>Nueva sede en la escuela cuenta con preparadores físicos, taekwondo, pilates y funcional. Se encuentra a pocas cuadras de la avenida Monteverde, tiene muchas interacciones con el resto de las sede ya que allí se realizan los exámenes </p>
+            </div>
+            <div class="sucursal__map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4633.9438727573115!2d-58.29644221528927!3d-34.788499702709544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d3cf39b0521%3A0x6db4f8a619ac7676!2sPTG%20FITNESS!5e0!3m2!1ses-419!2sar!4v1652030559336!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <form class="form">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mimail@ejemplo.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Me gustaria comenzar en la sede..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <footer class="footer">
+        <div class="footer__content">
+        <div class="footer__sitios">
+            <h4>Sitios</h4>
+            <ul>
+                <li>
+                    <a href="./section-locations.html">Sucursales</a>
+                </li>
+                <li>
+                    <a href="./section-instructors.html">Instructores</a>
+                </li>
+                <li>
+                    <a href="./section-students.html">Alumnos</a>
+                </li>
+                <li>
+                    <a href="./section-aboutus.html">Conocenos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__redes-sociales">
+            <h4>Redes sociales</h4>
+            <div>
+                <ul class="encabezado__social-media" type="none">
+                    <li>
+                        <a href="https://es-la.facebook.com/pascualtkdgroup/" target="_blank">
+                            <img src="../images/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ptg.training/" target="_blank">
+                            <img src="../images/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/pascualtkdgroup" target="_blank">
+                            <img src="../images/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="footer__derechos">
+            <p>©2022 Pascual Taekwodno Group, todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
