@@ -159,6 +159,31 @@ section iframe {
       align-items: center;
       text-align: center; }
 
+.taekwondo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .taekwondo img {
+    margin: 3rem 0;
+    width: 12%; }
+  .taekwondo__text {
+    width: 80%; }
+    .taekwondo__text__intro {
+      font-weight: 800;
+      text-align: justify; }
+    .taekwondo__text__desgloce {
+      font-weight: 700;
+      text-align: justify; }
+    .taekwondo__text__choi {
+      text-align: center; }
+      .taekwondo__text__choi img {
+        margin: 2rem 0 0 0;
+        width: 70%; }
+      .taekwondo__text__choi__art {
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 3rem; }
+
 .form {
   width: 80%;
   margin: 3rem auto; }
@@ -169,7 +194,7 @@ section iframe {
   margin-top: 3rem;
   align-items: stretch;
   justify-content: space-around;
-  padding-top: 3%;
+  padding: 30px 0 0 0;
   text-align: center; }
   .footer__content {
     display: flex;
@@ -190,6 +215,8 @@ section iframe {
   .footer__derechos {
     background-color: #EEEDDE;
     width: 100%; }
+    .footer__derechos p {
+      margin: 0; }
 
 .sucursal {
   display: flex;
@@ -304,12 +331,30 @@ section iframe {
     .section__do {
       font-size: 25px;
       margin-bottom: 3rem; }
+  .taekwondo {
+    margin-bottom: 3rem; }
+    .taekwondo__text__intro {
+      font-size: 15px;
+      font-weight: 700; }
+    .taekwondo__text__choi {
+      margin: 0 auto;
+      display: flex;
+      text-align: center;
+      align-items: flex-start;
+      width: 50%; }
+      .taekwondo__text__choi__art {
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 400; }
+    .taekwondo__text__desgloce {
+      font-size: 15px;
+      font-weight: 700; }
   .form {
     width: 55%; }
   .footer {
     font-size: 15px;
     margin-top: 0;
-    padding: 1%; }
+    padding: 30px 0 0 0; }
   .sucursal {
     width: 50%;
     margin: 0 auto; } }
