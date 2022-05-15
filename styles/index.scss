@@ -70,15 +70,16 @@ nav {
         margin: auto 9%;
         grid-gap: 3%;
     }
-    
+
     &__section {
-        
+
         &__a1 {
             text-decoration: none;
             font-weight: 600;
             font-size: larger;
             color: black;
-            &:hover{
+
+            &:hover {
                 transition: 500ms;
                 text-shadow: 3px 3px 6px #F9D923;
                 transform: translateY(-2px);
@@ -91,7 +92,8 @@ nav {
             font-weight: 600;
             font-size: larger;
             color: black;
-            &:hover{
+
+            &:hover {
                 transition: 500ms;
                 text-shadow: 3px 3px 6px #36AE7C;
                 transform: translateY(-2px);
@@ -104,19 +106,22 @@ nav {
             font-weight: 600;
             font-size: larger;
             color: black;
-            &:hover{
+
+            &:hover {
                 transition: 500ms;
                 text-shadow: 3px 3px 6px #187498;
                 transform: translateY(-2px);
                 color: black;
             }
         }
+
         &__a4 {
             text-decoration: none;
             font-weight: 600;
             font-size: larger;
             color: black;
-            &:hover{
+
+            &:hover {
                 transition: 500ms;
                 text-shadow: 3px 3px 6px #EB5353;
                 transform: translateY(-2px);
@@ -126,24 +131,28 @@ nav {
     }
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 500ms;
-    a{
-        text-decoration: none;
-        transition: 500ms;
-        &:hover{
-            transform: translateX(10px);
-            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9);
-        }
-    }
-    &__video {
+section {
+    iframe {
         width: 80%;
         margin: 2rem auto;
         border-radius: 20px 8px;
         box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9);
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        transition: 500ms;
+
+        &:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.9);
+        }
     }
 
     &__tae {
@@ -152,6 +161,7 @@ nav {
         border: 2px solid #141E27;
         background-color: #203239;
         margin-bottom: 1rem;
+
         img {
             display: none;
         }
@@ -175,6 +185,7 @@ nav {
         border: 2px solid #141E27;
         background-color: #203239;
         margin-bottom: 1rem;
+
         img {
             display: none;
         }
@@ -199,7 +210,7 @@ nav {
         background-color: #203239;
         margin-bottom: 3rem;
         text-decoration: none;
-        
+
         img {
             display: none;
         }
@@ -216,25 +227,65 @@ nav {
             text-align: center;
         }
     }
+
 }
 
-.form{
+.taekwondo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin: 3rem 0;
+        width: 12%;
+    }
+  
+    &__text{
+        width: 80%;
+        &__intro{
+            font-weight: 800;
+            text-align: justify;
+        }
+         &__desgloce{
+             font-weight: 700;
+             text-align: justify;
+         }
+         &__choi{
+             text-align: center;
+            img{
+                margin: 2rem 0 0 0;
+                width: 70%;
+            }
+            &__art{
+                font-size: 10px;
+                font-weight: 500;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+}
+
+.form {
     width: 80%;
     margin: 3rem auto;
 }
+
+
 .footer {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
     align-items: stretch;
     justify-content: space-around;
-    padding-top: 3%;
+    padding: 30px 0 0 0;
     text-align: center;
-    &__content{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
+
     &__sitios {
         text-align: center;
 
@@ -250,17 +301,44 @@ nav {
             display: flex;
             flex-direction: row;
             margin: 0 auto;
-            img{
+
+            img {
                 width: 90%;
             }
         }
     }
 
-    &__derechos{
+    &__derechos {
         background-color: #EEEDDE;
         width: 100%;
+
+        p {
+            margin: 0;
+        }
     }
 }
+
+.sucursal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    &__map {
+        width: 100%;
+        display: flex;
+    }
+}
+
+
+
+
 
 
 
@@ -371,7 +449,8 @@ nav {
             }
         }
     }
-    .form{
+
+    .form {
         width: 60%;
     }
 }
@@ -434,12 +513,46 @@ nav {
         }
     }
 
-    .form{
-        width: 40%;
+    .taekwondo{
+        margin-bottom: 3rem;
+        &__text{
+
+            &__intro{
+                font-size: 15px;
+                font-weight: 700;
+            }
+            &__choi{
+                margin: 0 auto;
+                display: flex;
+                text-align: center;
+                align-items: flex-start;
+                width: 50%;
+                &__art{
+                    text-align: justify;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            &__desgloce{
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
     }
+
+    .form {
+        width: 55%;
+    }
+
     .footer {
         font-size: 15px;
         margin-top: 0;
-        padding: 1%;
+        padding: 30px 0 0 0;
     }
+
+    .sucursal {
+        width: 50%;
+        margin: 0 auto;
+    }
+
 }
