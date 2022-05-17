@@ -56,7 +56,7 @@ footer {
 }
 
 nav {
-    background-color: #E0DDAA;
+    background-color: #E0DDAA ;
 }
 
 .nav {
@@ -336,8 +336,55 @@ section {
     }
 }
 
+.alumnos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto;
+    h1{
+        text-align: center;
+    }
 
+    font-weight: 600;
+    &__titulo{
+        margin: 3rem 0;
+    }
+    &__text{
+        margin-bottom: 3rem;
+        &__1{
+            font-size: 20px;
+        }
+        &__2{
+            font-size: 15px;
+            margin: 2rem 0;
+            font-weight: 800;
+        }
+        &__3{
+            font-size: 20px;
+        }
+    }
+}
 
+.carrusel{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__subtitle{
+        width: 80%;      
+    }
+    &__fotos{
+        width: 60%;
+        margin: 4rem auto;
+        img{
+            height: 500px;
+            width: fit-content;
+        }
+    }
+}
 
 
 
@@ -553,6 +600,17 @@ section {
     .sucursal {
         width: 50%;
         margin: 0 auto;
+    }
+
+    .alumnos{
+        &__text{
+            &__2{
+                text-align: center;
+                margin: 5rem 0;
+                font-size: 20px;
+                font-weight: 800;
+            }
+        }
     }
 
 }
