@@ -278,7 +278,7 @@ section iframe {
   .ictf2__title {
     text-align: center;
     margin-bottom: 3rem; }
-  .ictf2__p {
+  .ictf2__block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,10 +402,10 @@ section iframe {
       font-size: 15px;
       font-weight: 700; }
     .taekwondo__text__choi {
-      margin: 0 auto;
+      margin: 5rem auto;
       display: flex;
       text-align: center;
-      align-items: flex-start;
+      align-items: center;
       width: 50%; }
       .taekwondo__text__choi__art {
         text-align: justify;
@@ -430,10 +430,12 @@ section iframe {
     font-weight: 800; }
   .ictf2 {
     width: 90%; }
-    .ictf2__p {
+    .ictf2__block {
       display: flex;
       flex-direction: row;
       align-items: center;
+      width: 90%; }
+    .ictf2 p {
       width: 90%; }
     .ictf2__video {
       width: 90%; } }
