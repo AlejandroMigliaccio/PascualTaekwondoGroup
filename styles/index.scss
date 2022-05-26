@@ -414,7 +414,7 @@ section {
 
     }
 
-    &__p {
+    &__block{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -625,10 +625,10 @@ section {
             }
 
             &__choi {
-                margin: 0 auto;
+                margin: 5rem auto;
                 display: flex;
                 text-align: center;
-                align-items: flex-start;
+                align-items: center;
                 width: 50%;
 
                 &__art {
@@ -673,10 +673,13 @@ section {
 
     .ictf2{
         width: 90%;
-        &__p{
+        &__block{
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 90%;
+        }
+        p{
             width: 90%;
         }
         &__video{
