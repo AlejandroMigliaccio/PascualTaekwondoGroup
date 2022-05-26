@@ -391,11 +391,10 @@ section {
     }
 
     &__fotos {
-        width: 60%;
+        width: 100%;
         margin: 4rem auto;
 
         img {
-            height: 500px;
             width: fit-content;
         }
     }

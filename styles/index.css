@@ -263,10 +263,9 @@ section iframe {
   .carrusel__subtitle {
     width: 80%; }
   .carrusel__fotos {
-    width: 60%;
+    width: 100%;
     margin: 4rem auto; }
     .carrusel__fotos img {
-      height: 500px;
       width: fit-content; }
 
 .ictf2 {
