@@ -263,7 +263,7 @@ section iframe {
   .carrusel__subtitle {
     width: 80%; }
   .carrusel__fotos {
-    width: 100%;
+    width: 90%;
     margin: 4rem auto; }
     .carrusel__fotos img {
       width: fit-content; }
