@@ -391,7 +391,7 @@ section {
     }
 
     &__fotos {
-        width: 90%;
+        width: 100%;
         margin: 4rem auto;
 
         img {
@@ -683,6 +683,17 @@ section {
         }
         &__video{
             width: 90%;
+        }
+    }
+    .carrusel {
+    
+        &__fotos {
+            width: 50%;
+            margin: 4rem auto;
+    
+            img {
+                width: fit-content;
+            }
         }
     }
 

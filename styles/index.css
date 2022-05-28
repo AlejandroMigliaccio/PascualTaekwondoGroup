@@ -263,7 +263,7 @@ section iframe {
   .carrusel__subtitle {
     width: 80%; }
   .carrusel__fotos {
-    width: 90%;
+    width: 100%;
     margin: 4rem auto; }
     .carrusel__fotos img {
       width: fit-content; }
@@ -437,4 +437,9 @@ section iframe {
     .ictf2 p {
       width: 90%; }
     .ictf2__video {
-      width: 90%; } }
+      width: 90%; }
+  .carrusel__fotos {
+    width: 50%;
+    margin: 4rem auto; }
+    .carrusel__fotos img {
+      width: fit-content; } }
