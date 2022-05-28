@@ -685,5 +685,16 @@ section {
             width: 90%;
         }
     }
+    .carrusel {
+            
+        &__fotos {
+            width: 60%;
+            margin: 4rem auto;
+    
+            img {
+                width: fit-content;
+            }
+        }
+    }
 
 }
